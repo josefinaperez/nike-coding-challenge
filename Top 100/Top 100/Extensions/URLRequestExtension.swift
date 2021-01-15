@@ -11,7 +11,7 @@ import Foundation
 extension URLRequest {
     
     init?(router: Router) {
-        var components = URLComponents(router: router)
+        let components = URLComponents(router: router)
         guard let url = components.url else { return nil }
         self.init(url: url)
         self.httpMethod = router.method

@@ -12,7 +12,7 @@ class NetworkManager {
     
     static let shared = NetworkManager()
     
-    class func request<T: Codable>(router: Router, completion: @escaping (Result<[String: [T]], Error>) -> ()) {
+    class func request<T: Decodable>(router: Router, completion: @escaping (Result<T, Error>) -> ()) {
     
         guard let urlRequest = URLRequest(router: router) else { return }
         
@@ -28,11 +28,14 @@ class NetworkManager {
             }
                 
             do {
-                guard let responseObject = try? JSONDecoder().decode([String:[T]].self, from: data) else { return }
+               let responseObject = try JSONDecoder().decode(T.self, from: data)
                 
                 DispatchQueue.main.async {
                     completion(.success(responseObject))
                 }
+            } catch {
+                print("Unable to decode \(T.self)")
+                return
             }
         }).resume()
     }
