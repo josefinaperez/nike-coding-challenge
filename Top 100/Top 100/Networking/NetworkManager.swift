@@ -24,6 +24,7 @@ class NetworkManager {
             }
             
             guard let data = data else {
+                //add failure with custom error?
                 return
             }
                 
@@ -34,6 +35,7 @@ class NetworkManager {
                     completion(.success(responseObject))
                 }
             } catch {
+                //add failure with custom error?
                 print("Unable to decode \(T.self)")
                 return
             }

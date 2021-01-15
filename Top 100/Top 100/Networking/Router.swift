@@ -9,32 +9,32 @@
 import Foundation
 
 enum Router {
-    case getAlbums
+    case getFeed
     
     var scheme: String {
         switch self {
-        case .getAlbums:
+        case .getFeed:
             return "https"
         }
     }
     
     var host: String {
         switch self {
-        case .getAlbums:
+        case .getFeed:
             return "rss.itunes.apple.com"
         }
     }
     
     var path: String {
         switch self {
-        case .getAlbums:
+        case .getFeed:
             return "/api/v1/us/apple-music/top-albums/all/100/explicit.json"
         }
     }
     
     var method: String {
         switch self {
-        case .getAlbums:
+        case .getFeed:
             return "GET"
         }
     }
