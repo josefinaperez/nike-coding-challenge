@@ -14,7 +14,14 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getFeed()
     }
     
+    private func getFeed() {
+        homeViewModel = HomeViewModel()
+        homeViewModel?.bindToController = {
+            print("Feed updated")
+        }
+    }
 }
 
