@@ -22,6 +22,8 @@
 		D9E004EF25B219EB00BA6E48 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E004EE25B219EB00BA6E48 /* Genre.swift */; };
 		D9E004F425B21EF200BA6E48 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E004F325B21EF200BA6E48 /* HomeViewModel.swift */; };
 		D9E004F625B225DE00BA6E48 /* HomeViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E004F525B225DE00BA6E48 /* HomeViewControllerUI.swift */; };
+		D9E004F825B2298000BA6E48 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E004F725B2298000BA6E48 /* HomeView.swift */; };
+		D9F136E625B5FC300073008F /* HomeViewControllerTableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F136E525B5FC300073008F /* HomeViewControllerTableViewProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D9E004EE25B219EB00BA6E48 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		D9E004F325B21EF200BA6E48 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D9E004F525B225DE00BA6E48 /* HomeViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerUI.swift; sourceTree = "<group>"; };
+		D9E004F725B2298000BA6E48 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D9F136E525B5FC300073008F /* HomeViewControllerTableViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTableViewProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 			children = (
 				D9E004C125B1FE3E00BA6E48 /* HomeViewController.swift */,
 				D9E004F525B225DE00BA6E48 /* HomeViewControllerUI.swift */,
+				D9E004F725B2298000BA6E48 /* HomeView.swift */,
+				D9F136E525B5FC300073008F /* HomeViewControllerTableViewProtocols.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			files = (
 				D9E004E125B1FE9800BA6E48 /* Router.swift in Sources */,
 				D9E004F425B21EF200BA6E48 /* HomeViewModel.swift in Sources */,
+				D9E004F825B2298000BA6E48 /* HomeView.swift in Sources */,
 				D9E004EB25B20D2300BA6E48 /* Feed.swift in Sources */,
 				D9E004C225B1FE3E00BA6E48 /* HomeViewController.swift in Sources */,
 				D9E004E325B2010E00BA6E48 /* NetworkManager.swift in Sources */,
@@ -281,6 +288,7 @@
 				D9E004E825B2051700BA6E48 /* URLRequestExtension.swift in Sources */,
 				D9E004C025B1FE3E00BA6E48 /* SceneDelegate.swift in Sources */,
 				D9E004E625B2017000BA6E48 /* URLComponentsExtension.swift in Sources */,
+				D9F136E625B5FC300073008F /* HomeViewControllerTableViewProtocols.swift in Sources */,
 				D9E004EF25B219EB00BA6E48 /* Genre.swift in Sources */,
 				D9E004F625B225DE00BA6E48 /* HomeViewControllerUI.swift in Sources */,
 			);

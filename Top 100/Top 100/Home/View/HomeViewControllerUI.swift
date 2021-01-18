@@ -7,10 +7,24 @@
 //
 
 import Foundation
+import UIKit
 
 extension HomeViewController {
     
-    private func setupUI() {
-        
+    override func loadView() {
+        super.loadView()
+        createHomeView()
+    }
+    
+    private func createHomeView() {
+        if view as? HomeView == nil {
+            let homeView = HomeView(frame: UIScreen.main.bounds, tableViewDataSource: self, tableViewDelegate: self)
+            view = homeView
+        }
+    }
+    
+    func reloadData() {
+        guard let homeView = view as? HomeView else { return }
+        homeView.reloadTable()
     }
 }

@@ -10,8 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    private var homeViewModel: HomeViewModel?
-
+    var homeViewModel: HomeViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getFeed()
@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     private func getFeed() {
         homeViewModel = HomeViewModel()
         homeViewModel?.bindToController = {
-            print("Feed updated")
+            self.reloadData()
         }
     }
 }

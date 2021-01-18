@@ -10,7 +10,7 @@ import Foundation
 
 class HomeViewModel {
     
-    private var feed: Feed? { didSet {
+    var feed: Feed? { didSet {
         bindToController()
     }}
     
